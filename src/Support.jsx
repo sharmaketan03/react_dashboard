@@ -5,7 +5,7 @@ import { FaEye } from "react-icons/fa";
 
 function Support() {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen">
+    <div className="p-6 bg-gray-50 min-h-screen w-[82%] ">
       <div className="flex item-center justify-between">
       <h1 className="text-2xl font-bold mb-6">Support Tickets</h1>
 
@@ -29,7 +29,7 @@ function Support() {
       {/* Ticket Summary */}
       <div className=" flex item-center justify-around mt-[50px] gap-6">
         {/* Open Tickets */}
-        <div className="p-4 bg-gray-800 text-white rounded-lg w-[220px] h-[150px]">
+        <div className="p-4 bg-gray-800 text-white rounded-lg w-[230px] h-[150px]">
           <h2 className="text-lg">Open Tickets</h2>
           <div className="flex items-center justify-around mt-4">
             <span className="text-4xl font-bold text-blue-400 ">5</span>
@@ -38,7 +38,7 @@ function Support() {
         </div>
 
         {/* Working */}
-        <div className="p-4 bg-white border rounded-lg w-[220px] h-[150px]">
+        <div className="p-4 bg-white border rounded-lg w-[230px] h-[150px]">
           <h2 className="text-lg text-gray-800">Working</h2>
           <div className="flex items-center justify-around mt-4 ">
             <span className="text-4xl font-bold text-yellow-500">1</span>
@@ -47,7 +47,7 @@ function Support() {
         </div>
 
         {/* On-site Technician */}
-        <div className="p-4 bg-white border rounded-lg w-[220px] h-[180px]">
+        <div className="p-4 bg-white border rounded-lg w-[230px] h-[180px]">
           <h2 className="text-lg text-gray-800">On-site Technician</h2>
           <div className="flex items-center justify-around mt-4">
             <span className="text-4xl font-bold text-orange-500">2</span>
@@ -56,7 +56,7 @@ function Support() {
         </div>
 
         {/* Resolved */}
-        <div className="p-4 bg-white border rounded-lg w-[220px] h-[150px]">
+        <div className="p-4 bg-white border rounded-lg w-[230px] h-[150px]">
           <h2 className="text-lg text-gray-800">Resolved</h2>
           <div className="flex items-center justify-around mt-4">
             <span className="text-4xl font-bold text-green-500">1</span>
@@ -82,7 +82,7 @@ function Support() {
 
 
 
-      <div className="p-6">
+      <div className="p-6 w-[100%]">
   <table className="w-full border-collapse border border-gray-200">
     {/* Table Header */}
     <thead>
