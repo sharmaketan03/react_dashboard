@@ -1,3 +1,4 @@
+
 import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Contact from './Pages/Contact'
@@ -26,8 +27,9 @@ function App() {
   return (
     <>
      <RouterProvider router={router}/>
+
     </>
-  )
+  );
 }
 
-export default App
+export default App;
