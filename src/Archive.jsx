@@ -1,5 +1,4 @@
 import React from 'react';
-import LeftSideBar from './LeftSideBar';
 import { FiArchive } from 'react-icons/fi';
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -7,7 +6,7 @@ const Archive = () => {
   return (
     <div className="flex">
       {/* Left Sidebar */}
-      <LeftSideBar />
+   
       <div>
         <h1 className="text-[27px] font-bold m-[50px]">Archive</h1>
         <div className="flex gap-4 mx-[50px]">

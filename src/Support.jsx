@@ -5,7 +5,7 @@ import { FaEye } from "react-icons/fa";
 
 function Support() {
   return (
-    <div className="p-6 bg-gray-50 min-h-screen w-[82%] ">
+    <div className="p-6 bg-gray-50 min-h-screen  ">
       <div className="flex item-center justify-between">
       <h1 className="text-2xl font-bold mb-6">Support Tickets</h1>
 

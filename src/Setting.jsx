@@ -1,7 +1,7 @@
 import React from "react";
 import { FiSettings } from "react-icons/fi"; // Icon for settings
 import { HiOutlineArrowRight } from "react-icons/hi"; // Arrow icon
-import LeftSideBar from './LeftSideBar';
+
 
 const Setting = () => {
  
@@ -9,7 +9,7 @@ const Setting = () => {
   return (
     <div className="flex">
     {/* Left Sidebar */}
-    <LeftSideBar />
+   
     <div className="w-[0px]"><h1 className="mt-[25px] px-[45px] font-bold text-[25px] ">Setting</h1></div>
     
     <div className="flex item-center justify-evenly flex-wrap mt-[2%]  py-[70px]">

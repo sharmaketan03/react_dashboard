@@ -25,7 +25,7 @@ const LeftSideBar = () => {
               className="flex items-center gap-3  rounded-md bg-sky-100 text-sky-600 font-medium text-[12px] px-[20px] py-[10px]"
             >
               <RxDashboard className="text-lg" /> Dashboard
-            </Link>
+            </a>
           </li>
 
           <li  classname="">

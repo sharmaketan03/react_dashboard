@@ -1,15 +1,12 @@
 import React from 'react';
 import { GoPlus } from 'react-icons/go';
-import LeftSideBar from './LeftSideBar';
+
 
 const Resoursec = () => {
   return (
     <div className="flex">
-      {/* Left Sidebar */}
-      <LeftSideBar />
-
-      {/* Main Content */}
-      <div className="flex flex-col w-full px-[80px] pt-[60px]">
+     
+      <div className=" flex-col w-full px-[80px] pt-[60px]">
   <div className="flex justify-between items-center">
     <div>
       <h1 className="text-2xl font-bold mb-4">Resources</h1>
@@ -29,9 +26,9 @@ const Resoursec = () => {
 </div>
 
 
-
+</div>
     
-    </div>
+    
   );
 };
 
