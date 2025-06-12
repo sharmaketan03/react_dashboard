@@ -1,5 +1,5 @@
 
-import './App.css'
+import "./App.css"
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ContactComponent from './ContactComponent'
 import First from "./First"
@@ -9,6 +9,8 @@ import Resoursec from './Resoursec'
 import Archive from './Archive'
 import Setting from './Setting'
 import Support from './Support'
+import Technicians from './Technicians'
+import Jobcard from './Jobcard'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -42,16 +44,27 @@ const router = createBrowserRouter([
      path:"/archive",
      element:<Archive/>
       },
+      {
+     path:"/jobcard",
+     element:<Jobcard/>
+      },
+      {
+     path:"/Technicians",
+     element:<Technicians/>
+      },
     ]
   }
 ])
+
 
 
 function App() {
 
   return (
     <>
+
      <RouterProvider router={router}/>
+
 
     </>
   );

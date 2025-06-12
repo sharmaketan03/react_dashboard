@@ -44,7 +44,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/jobcard"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <TbShoppingBag className="text-lg" /> Job Cards
@@ -80,7 +80,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/technicians"
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
