@@ -53,7 +53,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/clients"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <CiFaceSmile className="text-lg" /> Clients
@@ -94,7 +94,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/clients"
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -135,7 +135,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/users"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <AiOutlineUser className="text-lg" /> Users
@@ -144,7 +144,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <MdLogout className="text-lg" /> Logout

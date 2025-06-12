@@ -11,6 +11,8 @@ import Setting from './Setting'
 import Support from './Support'
 import Technicians from './Technicians'
 import Jobcard from './Jobcard'
+import Clients from './Clients'
+import Users from './Users'
 const router = createBrowserRouter([
   {
     path:"/",
@@ -51,6 +53,14 @@ const router = createBrowserRouter([
       {
      path:"/Technicians",
      element:<Technicians/>
+      },
+      {
+     path:"/clients",
+     element:<Clients/>
+      },
+      {
+     path:"/users",
+     element:<Users/>
       },
     ]
   }
