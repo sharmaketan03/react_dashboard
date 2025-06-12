@@ -1,25 +1,28 @@
 
-import './App.css'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import Contact from './Pages/Contact'
-import First from "./First"
-import Home from './Component/Home'
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import First from './First';
+import './App.css';
+import Dashboard from './Dashboard';
+import AssetsComponent from './AssetsComponent';
+import ContactsComponent from './ContactComponent';
+
+
 const router = createBrowserRouter([
   {
-    path:"/",
-    element:<First/>,
-    children:[
-      {
-     index:true,
-     element:<Home/>
-      },
-      {
-     path:"/contact",
-     element:<Contact/>
-      }
-    ]
-  }
-])
+    path: "/",
+    element: <First/>,
+     children: [
+      { index: true, element: <Dashboard /> },
+      { path: "/Assets", element:<AssetsComponent/> },
+      { path: "/Contact", element:<ContactsComponent/> },
+    
+  
+    ],
+  },
+]);
+
+
 
 
 function App() {
@@ -30,6 +33,7 @@ function App() {
 
     </>
   );
+
 }
 
 export default App;
