@@ -1,16 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+
+import "./App.css"
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import ContactComponent from './ContactComponent'
+import First from "./First"
+import AssestComponent from "./AssetsComponent"
+import Dashboard from './Dashboard'
+import Resoursec from './Resoursec'
+import Archive from './Archive'
+import Setting from './Setting'
+import Support from './Support'
+import Technicians from './Technicians'
+import Jobcard from './Jobcard'
+const router = createBrowserRouter([
+  {
+    path:"/",
+    element:<First/>,
+    children:[
+      {
+     index:true,
+     element:<Dashboard/>
+      },
+      {
+     path:"/contact",
+     element:<ContactComponent/>
+      },
+      {
+     path:"/assets",
+     element:<AssestComponent/>
+      },
+      {
+     path:"/resoursec",
+     element:<Resoursec/>
+      },
+      {
+     path:"/setting",
+     element:<Setting/>
+      },
+      {
+     path:"/support",
+     element:<Support/>
+      },
+      {
+     path:"/archive",
+     element:<Archive/>
+      },
+      {
+     path:"/jobcard",
+     element:<Jobcard/>
+      },
+      {
+     path:"/Technicians",
+     element:<Technicians/>
+      },
+    ]
+  }
+])
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <h2 className='text-red-300'>hrlloewc</h2>
+
+     <RouterProvider router={router}/>
+
+
     </>
-  )
+  );
 }
 
 export default App
