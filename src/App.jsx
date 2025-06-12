@@ -1,5 +1,7 @@
 
-import './App.css'
+
+import Jobcard from './Jobcard'
+import Technicians from './Technici
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import ContactComponent from './ContactComponent'
 import First from "./First"
@@ -47,11 +49,14 @@ const router = createBrowserRouter([
 ])
 
 
+
 function App() {
 
   return (
     <>
+
      <RouterProvider router={router}/>
+
 
     </>
   );
