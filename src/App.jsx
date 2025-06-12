@@ -3,8 +3,12 @@ import './App.css'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Contact from './Pages/Contact'
 import First from "./First"
-import Home from './Component/Home'
+import Dashboard from './Dashboard'
 import Support from './Support'
+import Resoursec from './Resoursec'
+import Archive from './Archive'
+import Setting from './Setting'
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -12,16 +16,29 @@ const router = createBrowserRouter([
     children:[
       {
      index:true,
-     element:<Home/>
+     element:<Dashboard/>
       },
       {
      path:"/contact",
      element:<Contact/>
       },
       {
-     path:"/",
+     path:"/support",
      element:<Support/>
       }
+      ,{
+        path:"/Resoursec",
+        element:<Resoursec/>
+         }
+
+         ,{
+          path:"/Archive",
+          element:<Archive/>
+           }
+           ,{
+            path:"/Setting",
+            element:<Setting/>
+             }
     ]
   }
 ])

@@ -6,12 +6,12 @@ import { MdLogout } from "react-icons/md";
 const Header = () => {
   return (
     <>
-      <div className="bg-[#272d34] flex items-center gap-[23%] px-[20px] text-white justify-center p-2 relative">
-        <div className="w-[7%] ">
+      <div className="bg-[#272d34] flex items-center gap-[23%] px-[20px] text-white justify-center p-1 relative">
+        <div className="w-[10%] h-[40%]">
           <img src={Logo} alt="" className="w-full h-full" />
         </div>
         <div className="ml-[20px]">
-          <IoIosSearch className="text-white text-2xl absolute top-[15px] ml-2 " />
+          <IoIosSearch className="text-white text-2xl absolute top-[18px] ml-2 " />
           <input
             type="text"
             className="bg-[#2a3f50] w-[400px] py-[6px]  px-[30px] rounded-[7px]"

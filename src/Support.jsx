@@ -11,16 +11,16 @@ function Support() {
 
       {/* Buttons */}
       <div className="flex gap-4 mb-6">
-        <button className="flex items-center gap-2 px-4 py-2 border rounded-lg text-black-600 hover:bg-blue-100">
+        <button className="flex items-center gap-2 px-2 py-2 border rounded-lg text-black-600 hover:bg-blue-100">
           <GoPlus /> Add Client
         </button>
-        <button className="flex items-center gap-2 px-4 py-2 border rounded-lg text-black-600 hover:bg-blue-100">
+        <button className="flex items-center gap-2 px-2 py-2 border rounded-lg text-black-600 hover:bg-blue-100">
           <GoPlus /> Add Site
         </button>
-        <button className="flex items-center gap-2 px-4 py-2 border rounded-lg text-black-600 hover:bg-blue-100">
+        <button className="flex items-center gap-2 px-3 py-2 border rounded-lg text-black-600 hover:bg-blue-100">
           <GoPlus /> Add Asset
         </button>
-        <button className="flex items-center gap-2 px-4 py-2 border rounded-lg text-blue-600 hover:bg-blue-100">
+        <button className="flex items-center gap-2 px-3 py-2 border rounded-lg text-blue-600 hover:bg-blue-100">
           <GoPlus /> Add Ticket
         </button>
       </div>
@@ -86,8 +86,8 @@ function Support() {
   <table className="w-full border-collapse border border-gray-200">
     {/* Table Header */}
     <thead>
-      <tr className="bg-blue-100 text-left">
-        <th className="px-4 py-2 border-b border-gray-300">Ticket No.</th>
+      <tr className="bg-blue-100 text-left text-[14px]">
+        <th className="px-4 py-2 border-b border-gray-300 ">Ticket No.</th>
         <th className="px-4 py-2 border-b border-gray-300">Client Name</th>
         <th className="px-4 py-2 border-b border-gray-300">Client Site</th>
         <th className="px-4 py-2 border-b border-gray-300">Asset</th>
@@ -101,7 +101,7 @@ function Support() {
 
     {/* Table Body */}
     <tbody>
-      <tr className="hover:bg-gray-200">
+      <tr className="hover:bg-gray-200 text-sm">
         <td className="px-4 py-2 p-[20px]">10010</td>
         <td className="px-4 py-2 p-[20px]">Job Client Add</td>
         <td className="px-4 py-2 p-[20px]">TSC</td>
@@ -130,7 +130,7 @@ function Support() {
       </tr>
 
       {/* More Rows */}
-      <tr className="hover:bg-gray-200">
+      <tr className="hover:bg-gray-200 text-sm">
         <td className="px-4 py-2 p-[20px]">10009</td>
         <td className="px-4 py-2 p-[20px]">Sterling Infotech</td>
         <td className="px-4 py-2 p-[20px]">Sterling</td>
@@ -158,7 +158,7 @@ function Support() {
 
 
     <tbody>
-      <tr className="hover:bg-gray-200">
+      <tr className="hover:bg-gray-200 text-sm">
         <td className="px-4 py-2 p-[20px]">10010</td>
         <td className="px-4 py-2 p-[20px]">Job Client Add</td>
         <td className="px-4 py-2 p-[20px]">TSC</td>
@@ -182,7 +182,7 @@ function Support() {
       </tr>
 
       {/* More Rows */}
-      <tr className="hover:bg-gray-200">
+      <tr className="hover:bg-gray-200 text-sm">
         <td className="px-4 py-2 p-[20px]">10009</td>
         <td className="px-4 py-2 p-[20px]">Sterling Infotech</td>
         <td className="px-4 py-2 p-[20px]">Sterling</td>
@@ -209,7 +209,7 @@ function Support() {
 
 
     <tbody>
-      <tr className="hover:bg-gray-200">
+      <tr className="hover:bg-gray-200 text-sm">
         <td className="px-4 py-2 p-[20px]">10010</td>
         <td className="px-4 py-2 p-[20px]">Job Client Add</td>
         <td className="px-4 py-2 p-[20px]">TSC</td>
@@ -236,7 +236,7 @@ function Support() {
 
         </td>
         <td className="">
-          <a href=""><span className="bg-orange-500 text-white px-2 py-1 rounded-[4px] text-sm  h-[30px]">On site Technician</span></a>
+          <a href=""><span className="bg-orange-500 text-white px-2 py-1 rounded-[4px] text-lg]">On site Technician</span></a>
         </td>
         <td className="px-4 py-2  gap-2">
           <button className="text-blue-500 hover:underline">
@@ -249,7 +249,7 @@ function Support() {
       </tr>
 
       {/* More Rows */}
-      <tr className="hover:bg-gray-200">
+      <tr className="hover:bg-gray-200 text-sm">
         <td className="px-4 py-2 p-[20px]">10009</td>
         <td className="px-4 py-2 p-[20px]">Sterling Infotech</td>
         <td className="px-4 py-2 p-[20px]">Sterling</td>

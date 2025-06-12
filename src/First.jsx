@@ -1,13 +1,13 @@
-// import Header from './user/component/Header'
+import Header from './Header'
 import { Outlet } from 'react-router-dom'
-// import Footer from './user/component/Footer'
+import Footer from './LeftSideBar'
 
 function First() {
     return (
         <>
-            {/* <Header /> */}
+            <Header />
             <Outlet />
-            {/* <Footer /> */}
+            <Footer />
         </>
     )
 }
