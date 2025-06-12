@@ -1,26 +1,28 @@
-import "./App.css";
-import Dashboard from "./Dashboard";
-import Header from "./Header";
-import LeftSideBar from "./LeftSideBar";
+import React from 'react'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import First from './First';
+import './App.css';
+import Dashboard from './Dashboard';
+import AssetsComponent from './AssetsComponent';
+import ContactsComponent from './ContactComponent';
+
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <First/>,
+     children: [
+      { index: true, element: <Dashboard /> },
+      { path: "/Assets", element:<AssetsComponent/> },
+      { path: "/Contact", element:<ContactsComponent/> },
+    
+  
+    ],
+  },
+]);
 
 function App() {
-  return (
-    <>
-      <div className="h-screen ">
-        <Header />
-
-        <div className="flex">
-          <div>
-            <LeftSideBar />
-          </div>
-
-          <div className=" mt-[4%] m-[5%]">
-            <Dashboard />
-          </div>
-        </div>
-      </div>
-    </>
-  );
+    return <RouterProvider router={router} />;
 }
 
 export default App;
