@@ -7,10 +7,10 @@ const Header = () => {
   return (
     <>
       <div className="bg-[#272d34] flex items-center gap-[23%] px-[20px] text-white justify-center p-2 relative">
-        <div className="w-[100px] ">
+        <div className="w-[7%] ">
           <img src={Logo} alt="" className="w-full h-full" />
         </div>
-        <div className="ml-[20px] hidden md:block">
+        <div className="ml-[20px]">
           <IoIosSearch className="text-white text-2xl absolute top-[15px] ml-2 " />
           <input
             type="text"

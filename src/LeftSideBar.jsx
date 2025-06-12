@@ -16,25 +16,25 @@ import { Link } from "react-router-dom";
 const LeftSideBar = () => {
   return (
     <>
-      <div className="bg-sky-50 hidden md:block ">
+      <div className="bg-sky-50">
         <div className="w-[280px] pt-[20px]  text-gray-700 min-h-screen   shadow-md">
         <ul className="pt-6 space-y-1 px-4 text-sm">
           <li  classname=" ">
-            <Link
-              to="/"
+            <a
+              href="#"
               className="flex items-center gap-3  rounded-md bg-sky-100 text-sky-600 font-medium text-[12px] px-[20px] py-[10px]"
             >
               <RxDashboard className="text-lg" /> Dashboard
-            </Link>
+            </a>
           </li>
 
           <li  classname="">
             <a
-              href="#"
+              href="/support"
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
-                <CiBookmark className="text-lg" /> Support Tickets
+                <CiBookmark className="text-lg"></CiBookmark> Support Tickets
               </span>
               <span className="text-xs bg-sky-500 text-white px-2 py-0.5 rounded-full">
                 5
@@ -108,7 +108,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/Resoursec"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <CiFolderOn className="text-lg" /> Resources
@@ -117,7 +117,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/Archive"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <FiArchive className="text-lg" /> Archive
@@ -126,7 +126,7 @@ const LeftSideBar = () => {
 
           <li  classname="">
             <a
-              href="#"
+              href="/Setting"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <IoSettingsOutline className="text-lg" /> Settings

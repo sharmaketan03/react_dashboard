@@ -1,28 +1,50 @@
 
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import First from './First';
-import './App.css';
-import Dashboard from './Dashboard';
-import AssetsComponent from './AssetsComponent';
-import ContactsComponent from './ContactComponent';
-
-
+import './App.css'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import ContactComponent from './ContactComponent'
+import First from "./First"
+import AssestComponent from "./AssetsComponent"
+import Dashboard from './Dashboard'
+import Resoursec from './Resoursec'
+import Archive from './Archive'
+import Setting from './Setting'
+import Support from './Support'
 const router = createBrowserRouter([
   {
-    path: "/",
-    element: <First/>,
-     children: [
-      { index: true, element: <Dashboard /> },
-      { path: "/Assets", element:<AssetsComponent/> },
-      { path: "/Contact", element:<ContactsComponent/> },
-    
-  
-    ],
-  },
-]);
-
-
+    path:"/",
+    element:<First/>,
+    children:[
+      {
+     index:true,
+     element:<Dashboard/>
+      },
+      {
+     path:"/contact",
+     element:<ContactComponent/>
+      },
+      {
+     path:"/assets",
+     element:<AssestComponent/>
+      },
+      {
+     path:"/resoursec",
+     element:<Resoursec/>
+      },
+      {
+     path:"/setting",
+     element:<Setting/>
+      },
+      {
+     path:"/support",
+     element:<Support/>
+      },
+      {
+     path:"/archive",
+     element:<Archive/>
+      },
+    ]
+  }
+])
 
 
 function App() {
@@ -33,7 +55,6 @@ function App() {
 
     </>
   );
-
 }
 
-export default App;
+export default App
