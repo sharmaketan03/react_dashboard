@@ -1,19 +1,49 @@
 import React from 'react';
 import { useState } from 'react';
 import { GoPlus } from 'react-icons/go';
-import { MdEdit } from "react-icons/md";
 import { FaEye } from "react-icons/fa";
+import { LuPencil } from "react-icons/lu";
+import { FiArrowRight } from 'react-icons/fi';
+import { IoIosArrowForward } from "react-icons/io";
 
 import Portal from './Portal';
 
 function Support() {
   const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isClickOpen, setIsClickOpen] = useState(false);
+  const [isShowOpen, setIsShowOpen] = useState(false);
 
     const openModal = () => setIsModalOpen(true);
      const closeModal = () => setIsModalOpen(false);
 
+    
+
+     const openClick = () => setIsClickOpen(true);
+      const closeclick = () => setIsClickOpen(false);
+     
+
+
+      const openShow = () => setIsShowOpen(true);
+      const closeShow = () => setIsShowOpen(false);
+
+
+
+
+      
+        const [isPortalOpen, setPortalOpen] = useState(false);
+      
+        const togglePortal = () => {
+          setPortalOpen(!isPortalOpen);
+        };
+      
+        const closePortal = () => {
+          setPortalOpen(false);
+        }
+      
+
+
   return (
-    <div className="  pt-[50px] w-[98%]">
+    <div className=" mt-[50px] pt-[50px] w-[98%]">
       <div className="flex item-center justify-between">
       <h1 className="text-2xl font-bold mb-6">Support Tickets</h1>
 
@@ -26,7 +56,9 @@ function Support() {
 
         {isModalOpen && (
         <div
-          className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-50 p-[60px]"
+        className="fixed inset-0  bg-opacity-3 flex justify-center items-center z-50 p-[60px]"
+
+
           onClick={closeModal}
         >
           <div
@@ -104,17 +136,17 @@ function Support() {
         <button className="flex items-center gap-2 px-2 py-2 border rounded-lg text-black-600 hover:bg-blue-100"  >
           <GoPlus /> Add Site
         </button>
-        <button className="flex items-center gap-2 px-3 py-2 border rounded-lg text-black-600 hover:bg-blue-100" onClick={openModal}>
+        <button className="flex items-center gap-2 px-3 py-2 border rounded-lg text-black-600 hover:bg-blue-100" onClick={openClick}>
           <GoPlus /> Add Asset
         </button>
 
-        {isModalOpen && (
+        {isClickOpen && (
         <div
           className="fixed inset-0  bg-opacity-50 flex justify-center items-center z-50"
-          onClick={closeModal}
+          onClick={closeclick}
         >
           <div
-            className="bg-white p-6 rounded-lg w-[70%] shadow-lg"
+            className="bg-white p-6 rounded-lg w-[80%] shadow-lg"
             onClick={(e) => e.stopPropagation()}
           >
             {/* Header */}
@@ -122,11 +154,11 @@ function Support() {
               <h2 className="text-xl font-bold">Add Asset</h2>
               <button
                 className="text-gray-900 text-[30px] hover:text-gray-900 text-lg"
-                onClick={closeModal}
+                onClick={closeclick}
               >
                 &times;
               </button>
-            </div>
+            </div>  
 
             {/* Form */}
             <form>
@@ -201,7 +233,7 @@ function Support() {
                 <button
                   type="button"
                   className="text-gray-500 hover:text-gray-700"
-                  onClick={closeModal}
+                  onClick={closeclick}
                 >
                   Cancel
                 </button>
@@ -212,9 +244,115 @@ function Support() {
       )}
 
         
-        <button className="flex items-center gap-2 px-3 py-2 border rounded-lg text-blue-600 hover:bg-blue-100">
+        <button className="flex items-center gap-2 px-3 py-2 border rounded-lg text-blue-600 hover:bg-blue-100"  onClick={openShow}>
           <GoPlus /> Add Ticket
         </button>
+
+
+        {isShowOpen && (
+        <div
+          className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50 p-[180px] "
+          onClick={closeShow}
+        >
+          <div
+            className="bg-white p-6 rounded-lg w-[45%] shadow-lg"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex justify-between items-center border-b pb-2 mb-5">
+              <h2 className="text-xl font-bold">Add Support Ticket</h2>
+              <button
+                className="text-gray-900 text-[30px] hover:text-gray-900"
+                onClick={closeShow}
+              >
+                &times;
+              </button>
+            </div>
+            <form>
+              {/* Client Dropdown */}
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700">
+                  Client <span className="text-blue-500">(required)</span>
+                </label>
+                <select
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
+                >
+                  <option>Select</option>
+                </select>
+              </div>
+
+              {/* Site and Asset Dropdown */}
+              <div className="grid grid-cols-2 gap-4 mb-4">
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Site <span className="text-blue-500">(required)</span>
+                  </label>
+                  <select
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
+                  >
+                    <option>Select</option>
+                  </select>
+                </div>
+                <div>
+                  <label className="block text-sm font-medium text-gray-700">
+                    Asset <span className="text-blue-500">(required)</span>
+                  </label>
+                  <select
+                    className="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
+                  >
+                    <option>Select</option>
+                  </select>
+                </div>
+              </div>
+
+              {/* Requester Dropdown */}
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700">
+                  Select Requester <span className="text-blue-500">(required)</span>
+                </label>
+                <select
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
+                >
+                  <option>Select</option>
+                </select>
+                <button className="text-blue-600 text-sm mt-1">
+                  New Requester?
+                </button>
+              </div>
+
+              {/* Description */}
+              <div className="mb-4">
+                <label className="block text-sm font-medium text-gray-700">
+                  Description of Issue
+                </label>
+                <textarea
+                  className="w-full border border-gray-300 rounded px-3 py-2 focus:ring focus:ring-blue-200 focus:outline-none"
+                  rows="4"
+                  placeholder="Enter issue description"
+                ></textarea>
+              </div>
+
+              {/* Buttons */}
+              <div className="flex gap-4  mt-6">
+                <button
+                  type="submit"
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                >
+                  Add Ticket
+                </button>
+                <button
+                  type="button"
+                  className="text-gray-500 hover:text-gray-700"
+                  onClick={closeShow}
+                >
+                  Cancel
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+
+
       </div>
       </div>
 
@@ -225,7 +363,7 @@ function Support() {
           <h2 className="text-lg">Open Tickets</h2>
           <div className="flex items-center justify-around mt-4">
             <span className="text-4xl font-bold text-blue-400 ">5</span>
-            <span className="text-blue-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold mb-[40px]">50%</span>
+            <span className="text-blue-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold ">50%</span>
           </div>
         </div>
 
@@ -234,16 +372,16 @@ function Support() {
           <h2 className="text-lg text-gray-800">Working</h2>
           <div className="flex items-center justify-around mt-4 ">
             <span className="text-4xl font-bold text-yellow-500">1</span>
-            <span className="text-yellow-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold mb-[40px]">10%</span>
+            <span className="text-yellow-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold ">10%</span>
           </div>  
         </div>
 
         {/* On-site Technician */}
-        <div className="p-4 bg-white border rounded-lg w-[230px] h-[180px]">
+        <div className="p-4 bg-white border rounded-lg w-[230px] h-[150px]">
           <h2 className="text-lg text-gray-800">On-site Technician</h2>
           <div className="flex items-center justify-around mt-4">
             <span className="text-4xl font-bold text-orange-500">2</span>
-            <span className="text-orange-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold mt-[40px]">20%</span>
+            <span className="text-orange-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold">20%</span>
           </div>
         </div>
 
@@ -252,7 +390,7 @@ function Support() {
           <h2 className="text-lg text-gray-800">Resolved</h2>
           <div className="flex items-center justify-around mt-4">
             <span className="text-4xl font-bold text-green-500">1</span>
-            <span className="text-green-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold mb-[40px]">10%</span>
+            <span className="text-green-400 border-4 - 8px p-[12px] rounded-full h-[60px] w-[60px] font-bold ">10%</span>
           </div>
         </div>
       </div>
@@ -312,11 +450,135 @@ function Support() {
           <a href=""><span className="bg-blue-500 text-white px-2 py-1 rounded-[4px] text-sm p-[30px]">Open</span></a>
         </td>
         <td className="px-4 py-2  gap-2">
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-pen text-black p-[20px]"><MdEdit /></i>
-          </button>
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-eye text-black p-[20px]"><FaEye /></i>
+        <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
+                    <LuPencil />
+                      </button> 
+                      
+
+                      {isPortalOpen && (
+        <div
+          className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50"
+          
+          onClick={closePortal}
+        >
+
+          
+          <div
+            className="bg-white rounded-lg shadow-lg p-6 w-[30%] max-w-lg max-h-[90%] overflow-y-auto relative top-[30px] left-[476px]"
+            onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
+          >
+
+            <form>
+              {/* Sites */}
+            
+
+              <IoIosArrowForward className='text-2xl'  onClick={closePortal} />
+              <div className="bg-white rounded-lg shadow-md p-4 w-full max-w-md">
+                
+      {/* Header */}
+      <div className="flex justify-between items-center border-b pb-2">
+        
+        <div>
+          <h2 className="text-xl font-semibold">Ticket 10010</h2>
+          <p className="text-gray-500 text-sm">May 15, 2025</p>
+        </div>
+        <button className="text-blue-500 text-sm font-medium hover:underline">
+          View full details
+        </button>
+      </div>
+
+      {/* Content */}
+      <div className="flex items-center gap-4 mt-4">
+        {/* Profile Icon */}
+        <div className="flex justify-center items-center w-12 h-12 rounded-full bg-blue-100 text-blue-500 text-xl font-semibold">
+          Jc
+        </div>
+
+        {/* Info */}
+        <div className="flex-1">
+          <h3 className="text-lg font-medium">Job client add</h3>
+          <p className="text-gray-500 text-sm">TSC - total</p>
+          <p className="text-gray-400 text-sm">-</p>
+        </div>
+
+        {/* Edit Button */}
+        <button className="p-2 bg-gray-100 rounded hover:bg-gray-200">
+          <LuPencil className="text-gray-500" />
+        </button>
+      </div>
+    </div>
+
+    <div className="mb-6 mt-[20px]">
+                <label className="block text-gray-700 font-bold">Sites</label>
+               <hr />
+              </div>
+
+              {/* Asset */}
+              <div className="mb-6">
+                <label className="block text-gray-700 font-bold">Asset</label>
+                <hr />
+              </div>
+
+              {/* Primary Contact */}
+              <div className="mb-6">
+                <label className="block text-gray-700 font-bold">Primary Contact</label>
+                <hr />
+              </div>
+
+              {/* Phone */}
+              <div className="mb-6">
+                <label className="block text-gray-700 font-bold">Phone</label>
+                <hr />
+              </div>
+
+              {/* Email */}
+              <div className="mb-6">
+                <label className="block text-gray-700 font-bold">Email</label>
+                <hr />
+              </div>
+
+              {/* Ticket Title */}
+              <div className="mb-6">
+                <label className="block text-gray-700 font-bold">Ticket Title</label>
+                <hr />
+              </div>
+
+              {/* Description */}
+              <div className="mb-6">
+                <label className="block text-gray-700 font-bold">Description</label>
+                <textarea
+                  className="border border-gray-300 rounded w-full p-2 "
+                  rows="4"
+                  placeholder="Enter description"
+                ></textarea>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="flex justify-end space-x-4">
+                <button
+                  type="button"
+                  className="bg-gray-300 text-gray-700 px-4 py-2 rounded hover:bg-gray-400"
+                  onClick={closePortal}
+                >
+                  Cancel
+                </button>
+                <button
+                  type="button"
+                  className="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+                  onClick={closePortal}
+                >
+                  Save
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      )}
+                      
+                      
+                       <br />
+          <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+             <FiArrowRight />
           </button>
         </td>
       </tr>
@@ -338,11 +600,11 @@ function Support() {
          <a href=""><span className="bg-blue-500 text-white px-2 py-1 rounded-[4px] text-sm p-[20px]">Open</span></a> 
         </td>
         <td className="px-4 py-2  gap-2">
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-pen text-black p-[20px]"><MdEdit /> </i>
-          </button>
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-eye text-black p-[20px]"><FaEye /></i>
+        <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer " onClick={togglePortal}>
+                    <LuPencil />
+                      </button> <br />
+                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+             <FiArrowRight />
           </button>
         </td>
       </tr>
@@ -364,11 +626,11 @@ function Support() {
           <a href=""><span className="bg-blue-500 text-white px-2 py-1 rounded-[4px] text-sm p-[30px]">Open</span></a>
         </td>
         <td className="px-4 py-2  gap-2">
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-pen text-black p-[20px]"><MdEdit /></i>
-          </button>
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-eye text-black p-[20px]"><FaEye /></i>
+        <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
+                    <LuPencil />
+                      </button> <br />
+                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+             <FiArrowRight />
           </button>
         </td>
       </tr>
@@ -388,11 +650,11 @@ function Support() {
          <a href=""><span className="bg-blue-500 text-white px-2 py-1 rounded-[4px] text-sm p-[20px]">Open</span></a> 
         </td>
         <td className="px-4 py-2  gap-2">
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-pen text-black p-[20px]"><MdEdit /> </i>
-          </button>
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-eye text-black p-[20px]"><FaEye /></i>
+        <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
+                    <LuPencil />
+                      </button> <br />
+                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+             <FiArrowRight />
           </button>
         </td>
       </tr>
@@ -431,11 +693,11 @@ function Support() {
           <a href=""><span className="bg-orange-500 text-white px-2 py-1 rounded-[4px] text-lg]">On site Technician</span></a>
         </td>
         <td className="px-4 py-2  gap-2">
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-pen text-black p-[20px]"><MdEdit /></i>
-          </button>
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-eye text-black p-[20px]"><FaEye /></i>
+        <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
+                    <LuPencil />
+                      </button><br />
+                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+             <FiArrowRight />
           </button>
         </td>
       </tr>
@@ -457,11 +719,11 @@ function Support() {
          <a href=""><span className="bg-blue-500 text-white px-2 py-1 rounded-[4px] text-sm p-[20px]">Open</span></a> 
         </td>
         <td className="px-4 py-2  gap-2">
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-pen text-black p-[20px]"><MdEdit /> </i>
-          </button>
-          <button className="text-blue-500 hover:underline">
-            <i className="fas fa-eye text-black p-[20px]"><FaEye /></i>
+        <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
+                    <LuPencil />
+                      </button><br />
+                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+             <FiArrowRight />
           </button>
         </td>
       </tr>
@@ -488,63 +750,3 @@ export default Support;
 
 
 
-// import React, { useState } from 'react';
-// import Portal from './Portal';
-// import { GoPlus } from 'react-icons/go';
-
-// const Support = () => {
-//   const [isModalOpen, setIsModalOpen] = useState(false);
-
-//   const openModal = () => setIsModalOpen(true);
-//   const closeModal = () => setIsModalOpen(false);
-
-//   return (
-//     <div className="p-4">
-//       <button
-//         className="flex items-center bg-blue-400 gap-2 px-6 py-3 rounded-lg text-white hover:bg-blue-500"
-//         onClick={openModal}
-//       >
-//         <GoPlus /> Add Client
-//       </button>
-
-//       {isModalOpen && (
-//         <Portal>
-//           <div
-//             className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50"
-//             onClick={closeModal}
-//           >
-//             <div
-//               className="bg-white p-6 rounded-lg w-[400px] shadow-lg"
-//               onClick={(e) => e.stopPropagation()}
-//             >
-//               <h2 className="text-xl font-bold mb-4">Add Client</h2>
-//               <form>
-//                 <label className="block mb-2">
-//                   Name:
-//                   <input
-//                     type="text"
-//                     className="border border-gray-300 p-2 rounded w-full mt-1"
-//                   />
-//                 </label>
-//                 <button
-//                   type="submit"
-//                   className="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
-//                 >
-//                   Save
-//                 </button>
-//               </form>
-//               <button
-//                 className="mt-4 text-red-500 hover:underline"
-//                 onClick={closeModal}
-//               >
-//                 Cancel
-//               </button>
-//             </div>
-//           </div>
-//         </Portal>
-//       )}
-//     </div>
-//   );
-// };
-
-// export default Support;

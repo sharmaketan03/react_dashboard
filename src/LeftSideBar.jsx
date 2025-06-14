@@ -16,8 +16,8 @@ import { Link } from "react-router-dom";
 const LeftSideBar = () => {
   return (
     <>
-      <div className="bg-sky-50">
-        <div className="w-[280px] pt-[10px]  text-gray-700 min-h-screen   shadow-md">
+      <div className="bg-sky-50 fixed top-[0px] mt-[62px] overflow-auto">
+        <div className="w-[280px]  text-gray-700 min-h-screen   shadow-md">
         <ul className="pt-6 space-y-1 px-4 text-sm">
           <li  classname=" ">
             <a
