@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 /* Backdrop */
 .modal-backdrop {
   position: fixed;
@@ -37,3 +38,51 @@
     opacity: 1;
   }
 }
+
+.para_list {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 20%;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  animation: transform 0.8s ease-in-out;
+  z-index: 1000;
+}
+
+@keyframes transform {
+  0% {
+    top: 0;
+    right: -250px;
+  }
+  100% {
+    top: 0;
+    right: 0px;
+  }
+}
+
+
+
+  .para_list {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 20%;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    animation: transform 0.8s ease-in-out;
+    z-index: 1000;
+  }
+
+  @keyframes transform {
+    0% {
+      top: 0;
+      right: -250px;
+    }
+    100% {
+      top: 0;
+      right: 0px;
+    }
+  }

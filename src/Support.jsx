@@ -1,4 +1,5 @@
 import React from 'react';
+
 import { useState } from 'react';
 import { GoPlus } from 'react-icons/go';
 import { FaEye } from "react-icons/fa";
@@ -41,6 +42,11 @@ function Support() {
         }
       
 
+        const [isOpen, setIsOpen] = useState(false);
+
+  const handleClick = () => {
+    setIsOpen(!isOpen);
+  }
 
   return (
     <div className=" mt-[50px] pt-[50px] w-[98%]">
@@ -456,6 +462,7 @@ function Support() {
                       
 
                       {isPortalOpen && (
+                        <div className="para_list">
         <div
           className="fixed inset-0 bg-opacity-50 flex justify-center items-center z-50"
           
@@ -472,7 +479,7 @@ function Support() {
               {/* Sites */}
             
 
-              <IoIosArrowForward className='text-2xl'  onClick={closePortal} />
+              <IoIosArrowForward className='text-2xl cursor-pointer'  onClick={closePortal} />
               <div className="bg-white rounded-lg shadow-md p-4 w-full max-w-md">
                 
       {/* Header */}
@@ -573,14 +580,25 @@ function Support() {
             </form>
           </div>
         </div>
+        </div>
       )}
+
+
+
                       
                       
-                       <br />
-          <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
-             <FiArrowRight />
-          </button>
+      <br />
+     <a href="/SupportTicket">
+  <button
+    className="p-1 border rounded hover:bg-gray-100 mt-[10px] cursor-pointer"
+  >
+    <FiArrowRight />
+  </button>
+</a>
+
+          
         </td>
+
       </tr>
 
       {/* More Rows */}
@@ -629,7 +647,7 @@ function Support() {
         <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
                     <LuPencil />
                       </button> <br />
-                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
+                     <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
              <FiArrowRight />
           </button>
         </td>
