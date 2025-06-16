@@ -1,7 +1,10 @@
 const Jobcard = () => {
   return (
-    <div className="p-6 bg-gray-50 font-sans min-h-screen  w-[100%] mt-[80px] ">
-      <div className="flex flex-col sm:flex-row justify-around items-start sm:items-center mb-6">
+
+    <div className="p-1 mt-10 bg-gray-50 font-sans min-h-screen  w-[92%] m-auto">
+      <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+
+   
         <h1 className="text-3xl font-bold text-gray-800 mb-4 sm:mb-0">Job Cards</h1>
         <div className="flex flex-wrap items-center gap-6">
           <button className="text-sm font-medium text-gray-600 px-3 py-2 border border-gray-300 rounded-md">
@@ -22,7 +25,7 @@ const Jobcard = () => {
         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row gap-5 justify-center items-center pt-6">
+      <div className="flex flex-col sm:flex-row gap-5 justify-between items-center pt-6">
         <div className="flex justify-between items-center bg-gray-800 text-white p-6 rounded-lg w-72 h-30 shadow">
           <div>
             <h1 className="text-sm mb-1">Open Job Cards</h1>
@@ -32,13 +35,13 @@ const Jobcard = () => {
             0%
           </div>
         </div>
-
+        
         <div className="flex justify-between items-center bg-white p-6 rounded-lg w-72 h-30 shadow border border-gray-200">
           <div>
             <h1 className="text-sm text-gray-800 mb-1">In Progress</h1>
             <p className="text-3xl font-bold text-yellow-400">1</p>
           </div>
-          <div className="w-12 h-12 rounded-full border-4 border-yellow-400 border-t-transparent rotate-[100deg] flex items-center justify-center text-sm text-gray-800">
+          <div className="w-12 h-12 rounded-full border-4 border-l-yellow-400  flex items-center justify-center text-sm text-gray-400">
             33%
           </div>
         </div>
@@ -48,7 +51,7 @@ const Jobcard = () => {
             <h1 className="text-sm text-gray-800 mb-1">Completed</h1>
             <p className="text-3xl font-bold text-green-500">2</p>
           </div>
-          <div className="w-12 h-12 rounded-full border-4 border-green-400 border-t-transparent rotate-[240deg] flex items-center justify-center text-sm text-gray-800">
+          <div className="w-12 h-12 rounded-full border-4 border-r-green-500   flex items-center justify-center text-sm text-gray-400">
             67%
           </div>
         </div>
@@ -60,7 +63,7 @@ const Jobcard = () => {
 
 
 
- <div className="pt-10 w-full max-w-4xl mx-auto">
+ <div className="pt-5 w-full  mx-auto">
       <div className="flex space-x-8 text-sm font-medium border-b border-gray-200 mb-4 mt">
         <div className="pb-2 border-b-2 border-blue-500 text-blue-600 cursor-pointer">Active</div>
         <div className="pb-2 text-gray-600 hover:text-blue-500 cursor-pointer">Complete</div>

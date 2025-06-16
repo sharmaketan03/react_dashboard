@@ -4,11 +4,13 @@ import { HiOutlinePencil } from "react-icons/hi2";
 
 const Technicians = () => {
   return (
-    <div className=" w-[100%] min-h-screen flex justify-center mt-[100px]">
+
+    <div className="p-10 w-[92%] bg-gray-100 min-h-screen flex justify-center m-auto">
+
       <div className="w-full max-w-7xl">
         <div className="flex justify-between items-center mb-6">
-          <h1 className="text-3xl font-bold text-gray-800">Technicians</h1>
-          <button className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded-md">
+          <h1 className="text-2xl font-bold text-gray-800">Technicians</h1>
+          <button className="bg-sky-500 hover:bg-sky-600 text-white px-4 py-1 rounded-md text-xs">
             + Add Technician
           </button>
         </div>
@@ -16,7 +18,7 @@ const Technicians = () => {
         <div className="rounded-md border border-gray-200 overflow-x-auto bg-white p-6">
           <table className="w-full text-sm text-left text-gray-700">
             <thead>
-              <tr className="bg-blue-200 text-gray-800">
+              <tr className="bg-blue-100 text-gray-800 text-xs">
                 <th className="px-6 py-3">Company</th>
                 <th className="px-6 py-3">Tags</th>
                 <th className="px-6 py-3">Email</th>
@@ -26,7 +28,7 @@ const Technicians = () => {
               </tr>
             </thead>
             <tbody>
-              <tr className="border-t hover:bg-gray-50">
+              <tr className="border-t hover:bg-gray-50 text-xs">
                 <td className="px-6 py-4">Support</td>
                 <td className="px-6 py-4"></td>
                 <td className="px-6 py-4">a@test.com</td>
@@ -40,7 +42,7 @@ const Technicians = () => {
                 </td>
               </tr>
 
-              <tr className="border-t hover:bg-gray-50">
+              <tr className="border-t hover:bg-gray-50 text-xs">
                 <td className="px-6 py-4">SXDA</td>
                 <td className="px-6 py-4 flex flex-wrap gap-2">
                   <span className="border px-3 py-1 rounded-full">Spraybooth</span>
@@ -60,7 +62,7 @@ const Technicians = () => {
             </tbody>
           </table>
 
-          <div className="mt-5 flex justify-between items-center text-sm text-gray-600 border-t pt-4">
+          <div className="mt-5 flex justify-between items-center text-sm text-gray-600 border-t pt-4 text-xs">
             <div>Page 1 of 1, showing 2 record(s) out of 2 total</div>
             <div className="flex gap-2">
               <button className="px-3 py-1 border rounded text-gray-400" disabled>

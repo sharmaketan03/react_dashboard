@@ -10,28 +10,36 @@ import { FaLessThan, FaGreaterThan } from "react-icons/fa6";
 
 function Clients() {
   return (
-    <div className='w-[100%] mx-auto my-6 mt-[95px]'>
+
+    <div className='w-[92%] m-auto my-6'>
+
+   
+
       {/* Header */}
       <div className='flex items-center justify-between mb-4'>
         <h1 className='text-2xl font-semibold'>Clients</h1>
-        <button className='bg-sky-500 hover:bg-sky-600 text-white px-4 py-2 rounded font-medium'>
+        <button className='bg-sky-500 hover:bg-sky-600 text-white px-4 py-1 rounded font-medium text-xs'>
           + Add Client
         </button>
       </div>
 
       {/* Table Section with Border */}
-      <div className='border border-gray-300 p-5 rounded-lg shadow'>
+      <div className='border border-gray-300 p-5 rounded-lg shadow text-xs'>
         <div className='overflow-x-auto'>
           <table className='min-w-full bg-white'>
             {/* Full sky blue thead */}
-            <thead className='bg-sky-300 w-full'>
+            <thead className='bg-sky-200 w-full'>
               <tr>
                 <th className='px-6 py-3 text-left font-semibold text-gray-800 border-b w-[25%]'>Company Name</th>
                 <th className='px-6 py-3 text-left font-semibold text-gray-800 border-b w-[25%]'>
                   <div className='flex items-center gap-2'>
-                    <FaLongArrowAltDown />
+                     <FaLongArrowAltDown />
                     <MdNetworkCell />
+                    <span>
+                   
                     Site
+                    </span>
+                   
                   </div>
                 </th>
                 <th className='px-6 py-3 text-left font-semibold text-gray-800 border-b w-[25%]'>No. of Asset</th>

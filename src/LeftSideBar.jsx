@@ -16,6 +16,8 @@ import { Link } from "react-router-dom";
 const LeftSideBar = () => {
   return (
     <>
+
+
       <div className="bg-sky-50 fixed top-[0px] mt-[62px] overflow-auto">
         <div className="w-[280px]  text-gray-700 min-h-screen   shadow-md">
         <ul className="pt-6 space-y-1 px-4 text-sm">
@@ -28,9 +30,11 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/support"
+
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -42,25 +46,29 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/jobcard"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <TbShoppingBag className="text-lg" /> Job Cards
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/clients"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <CiFaceSmile className="text-lg" /> Clients
             </Link>
           </li>
 
-          <li  classname="">
+          <li >
             <Link
               to="Assets"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
@@ -69,7 +77,7 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
-          <li  classname="">
+          <li  >
             <Link
               to="Contact"
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
@@ -78,9 +86,11 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/technicians"
+
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -92,9 +102,11 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/ToInvoice"
+
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -106,9 +118,11 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/Resoursec"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <CiFolderOn className="text-lg" /> Resources
@@ -118,6 +132,7 @@ const LeftSideBar = () => {
           <li  classname="">
             <Link
               to="/Archive"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <FiArchive className="text-lg" /> Archive
@@ -127,24 +142,29 @@ const LeftSideBar = () => {
           <li  classname="">
             <Link
               to="/Setting"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <IoSettingsOutline className="text-lg" /> Settings
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/users"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <AiOutlineUser className="text-lg" /> Users
             </Link>
           </li>
 
+
           <li  classname="">
             <Link
               to="/"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <MdLogout className="text-lg" /> Logout
