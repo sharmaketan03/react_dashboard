@@ -16,21 +16,25 @@ import { Link } from "react-router-dom";
 const LeftSideBar = () => {
   return (
     <>
-      <div className="bg-sky-50  fixed top-[60px]">
-        <div className="w-[280px] pt-[10px]  text-gray-700 min-h-screen   shadow-md">
+
+
+      <div className="bg-sky-50 fixed top-[0px] mt-[62px] overflow-auto">
+        <div className="w-[280px]  text-gray-700 min-h-screen   shadow-md">
         <ul className="pt-6 space-y-1 px-4 text-sm">
-          <li>
-            <a
-              href="/"
+          <li  classname=" ">
+            <Link
+              to="/"
               className="flex items-center gap-3  rounded-md bg-sky-100 text-sky-600 font-medium text-[12px] px-[20px] py-[10px]"
             >
               <RxDashboard className="text-lg" /> Dashboard
-            </a>
+            </Link>
           </li>
 
-          <li>
-            <a
-              href="/support"
+
+          <li  classname="">
+            <Link
+              to="/support"
+
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -39,25 +43,29 @@ const LeftSideBar = () => {
               <span className="text-xs bg-sky-500 text-white px-2 py-0.5 rounded-full">
                 5
               </span>
-            </a>
+            </Link>
           </li>
 
-          <li>
-            <a
-              href="/jobcard"
+
+          <li  classname="">
+            <Link
+              to="/jobcard"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <TbShoppingBag className="text-lg" /> Job Cards
-            </a>
+            </Link>
           </li>
 
-          <li >
-            <a
-              href="/clients"
+
+          <li  classname="">
+            <Link
+              to="/clients"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <CiFaceSmile className="text-lg" /> Clients
-            </a>
+            </Link>
           </li>
 
           <li >
@@ -78,9 +86,11 @@ const LeftSideBar = () => {
             </Link>
           </li>
 
-          <li >
-            <a
-              href="/technicians"
+
+          <li  classname="">
+            <Link
+              to="/technicians"
+
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -89,12 +99,14 @@ const LeftSideBar = () => {
               <span className="text-xs bg-sky-500 text-white px-2 py-0.5 rounded-full">
                 2
               </span>
-            </a>
+            </Link>
           </li>
 
-          <li  >
-            <a
-              href="#"
+
+          <li  classname="">
+            <Link
+              to="/ToInvoice"
+
               className="flex items-center justify-between px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <span className="flex items-center gap-3">
@@ -103,52 +115,60 @@ const LeftSideBar = () => {
               <span className="text-xs bg-sky-500 text-white px-2 py-0.5 rounded-full">
                 0
               </span>
-            </a>
+            </Link>
           </li>
 
-          <li  >
-            <a
-              href="/Resoursec"
+
+          <li  classname="">
+            <Link
+              to="/Resoursec"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <CiFolderOn className="text-lg" /> Resources
-            </a>
+            </Link>
           </li>
 
-          <li >
-            <a
-              href="/Archive"
+          <li  classname="">
+            <Link
+              to="/Archive"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <FiArchive className="text-lg" /> Archive
-            </a>
+            </Link>
           </li>
 
-          <li  >
-            <a
-              href="/Setting"
+          <li  classname="">
+            <Link
+              to="/Setting"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <IoSettingsOutline className="text-lg" /> Settings
-            </a>
+            </Link>
           </li>
 
-          <li  >
-            <a
-              href="/users"
+
+          <li  classname="">
+            <Link
+              to="/users"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <AiOutlineUser className="text-lg" /> Users
-            </a>
+            </Link>
           </li>
 
-          <li >
-            <a
-              href="#"
+
+          <li  classname="">
+            <Link
+              to="/"
+
               className="flex items-center gap-3 px-[20px] py-[10px] rounded-md hover:bg-blue-200 hover:text-blue-400 text-[12px]"
             >
               <MdLogout className="text-lg" /> Logout
-            </a>
+            </Link>
           </li>
         </ul>
       </div>

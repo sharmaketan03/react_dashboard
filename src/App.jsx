@@ -11,12 +11,21 @@ import Setting from './Setting'
 import Support from './Support'
 import Technicians from './Technicians'
 import Jobcard from './Jobcard'
+
 import Dashboardonsite from "./Dashboard-onsite"
 import DashboardOnsiteTechninc from "./DashboardOnsiteTechninc"
 import DashboardWorking from "./DashboardWorking"
 import DashboardOpen from "./DashboardOpen"
 import Users from "./Users"
 import Clients from "./Clients"
+
+
+
+import SupportTicket from './SupportTicket'
+import ToInvoice from "./ToInvoice"
+
+import SupportTicket2 from './Support'
+
 const router = createBrowserRouter([
   {
     path:"/",
@@ -63,6 +72,7 @@ const router = createBrowserRouter([
      element:<Technicians/>
       },
        {
+
      path:"/dasboardonsite",
      element:<Dashboardonsite/>
       },{
@@ -75,10 +85,25 @@ const router = createBrowserRouter([
      path:"/dasboardopen",
      element:<DashboardOpen/>
       }
-      ,{
+      ,
+        {
+     path:"/ToInvoice",
+     element:<ToInvoice/>
+      },
+      
+      {
      path:"/users",
      element:<Users/>
-      }
+      },
+      {
+      path:"/supportTicket",
+      element:<SupportTicket/>
+      },
+      {
+      path:"/supportTicket2",
+      element:<SupportTicket2/>
+      },
+
     ]
   }
 ])

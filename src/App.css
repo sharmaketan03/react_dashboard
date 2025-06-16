@@ -1,3 +1,88 @@
-
 @import "tailwindcss";
 
+
+/* Backdrop */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+/* Modal Container */
+.modal-container {
+  background: white;
+  width: 500px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  position: relative;
+  animation: slide-down 1s ease-in-out; /* Duration: 1 second */
+}
+
+/* Slide-down Animation */
+@keyframes slide-down {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(-30%);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.para_list {
+  position: fixed;
+  right: 0px;
+  top: 0px;
+  width: 20%;
+  padding: 20px;
+  height: 100vh;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+  animation: transform 0.8s ease-in-out;
+  z-index: 1000;
+}
+
+@keyframes transform {
+  0% {
+    top: 0;
+    right: -250px;
+  }
+  100% {
+    top: 0;
+    right: 0px;
+  }
+}
+
+
+
+  .para_list {
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    width: 20%;
+    padding: 20px;
+    height: 100vh;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    animation: transform 0.8s ease-in-out;
+    z-index: 1000;
+  }
+
+  @keyframes transform {
+    0% {
+      top: 0;
+      right: -250px;
+    }
+    100% {
+      top: 0;
+      right: 0px;
+    }
+  }
