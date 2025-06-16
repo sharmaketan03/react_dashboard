@@ -6,6 +6,9 @@ import { MdLogout } from "react-icons/md";
 const Header = () => {
   return (
     <>
+      <div className="fixed top-0 left-0 right-0  z-20">
+
+    
       <div className="bg-[#272d34] flex items-center gap-[23%] px-[20px] text-white justify-center p-2 relative">
         <div className="w-[7%] ">
           <img src={Logo} alt="" className="w-full h-full" />
@@ -18,9 +21,9 @@ const Header = () => {
           />
         </div>
         <div className=" text-[15px] hidden md:block ">
-      <div className="flex items-center  gap-3.5 justify-center">
-            <span className="text-white">
-            <h3>Welcome back,Clark Kelly!</h3>
+      <div className="flex items-center w-[ 400px]  gap-2 justify-center">
+            <span className="text-white text-[15px]">
+            <h3 className="text-[11px]">Welcome back,Clark Kelly!</h3>
           </span>
           <a href="">Logout</a>
           <MdLogout />
@@ -32,6 +35,7 @@ const Header = () => {
 
         </div>
       </div>
+        </div>
     </>
   );
 };

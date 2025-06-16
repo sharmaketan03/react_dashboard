@@ -9,7 +9,7 @@ const First = () => {
       <div className="h-screen ">
         <Header />
 
-        <div className="flex flex-col md:flex-row md:gap-[5%]">
+        <div className="flex flex-col md:flex-row  mt-[60px]">
   <div className="w-full md:w-[20%] min-w-[200px]">
     <LeftSideBar />
   </div>
