@@ -2,9 +2,9 @@ import React from "react";
 
 const ContactsComponent = () => {
   return (
-    <div className="mt-[5%]">
+    <div className="mt-[10%]">
       <h1 className="text-2xl font-bold mb-8">Contacts</h1>
-      <div className="p-6 bg-white w-[1100px]  border border-gray-300 rounded-xl shadow-md">
+      <div className=" bg-white w-[100%]  border border-gray-300 rounded-xl shadow-md">
         <div className="overflow-x-auto">
           <table className="min-w-full text-sm text-left border-collapse">
             <thead>
