@@ -68,6 +68,7 @@ const Setting = () => {
         </div>
       </div>
      
+     
       <HiOutlineArrowRight className=" text-[22px] text-blue-600" />
     </div>
 
