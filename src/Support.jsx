@@ -621,9 +621,13 @@ function Support() {
         <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer " onClick={togglePortal}>
                     <LuPencil />
                       </button> <br />
-                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
-             <FiArrowRight />
-          </button>
+                      <a href="/SupportTicket">
+  <button
+    className="p-1 border rounded hover:bg-gray-100 mt-[10px] cursor-pointer"
+  >
+    <FiArrowRight />
+  </button>
+</a>
         </td>
       </tr>
     </tbody>
@@ -647,9 +651,13 @@ function Support() {
         <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
                     <LuPencil />
                       </button> <br />
-                     <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
-             <FiArrowRight />
-          </button>
+                      <a href="/SupportTicket">
+  <button
+    className="p-1 border rounded hover:bg-gray-100 mt-[10px] cursor-pointer"
+  >
+    <FiArrowRight />
+  </button>
+</a>
         </td>
       </tr>
 
@@ -671,9 +679,13 @@ function Support() {
         <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
                     <LuPencil />
                       </button> <br />
-                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
-             <FiArrowRight />
-          </button>
+                      <a href="/SupportTicket">
+  <button
+    className="p-1 border rounded hover:bg-gray-100 mt-[10px] cursor-pointer"
+  >
+    <FiArrowRight />
+  </button>
+</a>
         </td>
       </tr>
     </tbody>
@@ -714,9 +726,13 @@ function Support() {
         <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
                     <LuPencil />
                       </button><br />
-                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
-             <FiArrowRight />
-          </button>
+                      <a href="/SupportTicket">
+  <button
+    className="p-1 border rounded hover:bg-gray-100 mt-[10px] cursor-pointer"
+  >
+    <FiArrowRight />
+  </button>
+</a>
         </td>
       </tr>
 
@@ -740,9 +756,13 @@ function Support() {
         <button className="p-1 border rounded hover:bg-gray-100 cursor-pointer" onClick={togglePortal}>
                     <LuPencil />
                       </button><br />
-                      <button className="p-1 border rounded  hover:bg-gray-100 mt-[10px] cursor-pointer">
-             <FiArrowRight />
-          </button>
+                      <a href="/SupportTicket">
+  <button
+    className="p-1 border rounded hover:bg-gray-100 mt-[10px] cursor-pointer"
+  >
+    <FiArrowRight />
+  </button>
+</a>
         </td>
       </tr>
     </tbody>
