@@ -14,7 +14,9 @@ import Jobcard from './Jobcard'
 import Clients from './Clients'
 import Users from './Users'
 import SupportTicket from './SupportTicket'
-import SupportTicket2 from './SupportTicket2'
+import ToInvoice from "./ToInvoice"
+
+import SupportTicket2 from './Suppor
 const router = createBrowserRouter([
   {
     path:"/",
@@ -55,6 +57,10 @@ const router = createBrowserRouter([
       {
      path:"/Technicians",
      element:<Technicians/>
+      },
+       {
+     path:"/ToInvoice",
+     element:<ToInvoice/>
       },
       {
      path:"/clients",
