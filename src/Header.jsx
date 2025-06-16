@@ -20,7 +20,7 @@ const Header = () => {
         <div className=" text-[15px] hidden md:block ">
       <div className="flex items-center  gap-3.5 justify-center">
             <span className="text-white">
-            <h3>Welcome back,Clark Kelly!</h3>
+            <h3>Welcome back,Clark Kelly!   tanmayshukla</h3>
           </span>
           <a href="">Logout</a>
           <MdLogout />
