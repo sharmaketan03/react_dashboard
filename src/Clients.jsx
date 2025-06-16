@@ -10,7 +10,11 @@ import { FaLessThan, FaGreaterThan } from "react-icons/fa6";
 
 function Clients() {
   return (
+
     <div className='w-[92%] m-auto my-6'>
+
+   
+
       {/* Header */}
       <div className='flex items-center justify-between mb-4'>
         <h1 className='text-2xl font-semibold'>Clients</h1>

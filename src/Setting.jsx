@@ -7,7 +7,9 @@ const Setting = () => {
  
 
   return (
+
     <div className="w-[92%] m-auto">
+
     {/* Left Sidebar */}
    
     <div className="flex-start">

@@ -1,8 +1,12 @@
 import React, { useState } from "react";
 import { LuPencil } from "react-icons/lu";
+
 import { Link } from "react-router-dom"
-import uuuu from "./LeftSideBar"
 import Dashboardonsite from "./Dashboard-onsite";
+
+
+
+
 const Dashboard = () => {
 
   const [ticket , setTicket]=useState(true)
@@ -22,8 +26,15 @@ const Dashboard = () => {
        
   return (
     <>
+
     
       <div className="w-[92%] m-auto">
+
+  
+
+  
+    
+
         <h1 className="text-2xl mt-[4%] font-bold mb-6">Dashboard</h1>
         <div>
           <div className="p-6 bg-white  border border-gray-300 rounded-xl shadow-md">
@@ -213,9 +224,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                      <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
                     <LuPencil />
-                      </button>
+                      </button></a>
                     </td>
                   </tr>
 
@@ -263,9 +275,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                    <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
                     <LuPencil />
-                      </button>
+                      </button></a>
                     </td>
                   </tr>
              
@@ -387,9 +400,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                    <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
-                     <LuPencil />
-                      </button>
+                    <LuPencil />
+                      </button></a>
                     </td>
                   </tr>
    <tr className="border-t  border-gray-300">
@@ -507,9 +521,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                    <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
-                        <LuPencil />
-                      </button>
+                    <LuPencil />
+                      </button></a>
                     </td>
                   </tr>
  <tr className="border-t border-gray-300 leading-8">

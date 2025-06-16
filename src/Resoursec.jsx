@@ -4,7 +4,9 @@ import { GoPlus } from "react-icons/go";
 const Resoursec = () => {
   return (
     <>
+
    <div className="text-2xl font-bold  w-[92%] m-auto  mt-10">
+
   <div className="flex items-center justify-between">
     <h1 className="text-2xl font-bold mb-6">Resources</h1>
 

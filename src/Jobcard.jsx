@@ -1,7 +1,10 @@
 const Jobcard = () => {
   return (
+
     <div className="p-1 mt-10 bg-gray-50 font-sans min-h-screen  w-[92%] m-auto">
       <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6">
+
+   
         <h1 className="text-3xl font-bold text-gray-800 mb-4 sm:mb-0">Job Cards</h1>
         <div className="flex flex-wrap items-center gap-6">
           <button className="text-sm font-medium text-gray-600 px-3 py-2 border border-gray-300 rounded-md">
