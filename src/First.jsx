@@ -13,7 +13,7 @@ const First = () => {
   <div className="w-full md:w-[20%] min-w-[200px]">
     <LeftSideBar />
   </div>
-  <div className="w-full md:w-[75%] flex-grow">
+<div className="w-full md:w-[75%] flex-grow">  
     <Outlet />
   </div>
 </div>

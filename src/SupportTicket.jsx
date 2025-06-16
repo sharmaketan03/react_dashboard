@@ -49,11 +49,9 @@ const SupportTicket = () => {
         >
           On-site Technician
         </div>
-        <div
-          className="flex-1 py-2 px-4 bg-gray-400 text-gray-600 rounded-r-lg text-center"
-        >
+        <button className="flex-1 py-2 px-4 bg-gray-400 text-gray-600 rounded-r-lg text-center" >
           Resolved
-        </div>
+        </button>
       </div>
       <div className="  min-h-screen w-[98%]">
       <div className="max-w-7xl mx-auto bg-white p-6 rounded-lg shadow-md">

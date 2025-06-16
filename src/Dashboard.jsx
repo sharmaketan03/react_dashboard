@@ -47,9 +47,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                      <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
                     <LuPencil />
-                      </button>
+                      </button></a>
                     </td>
                   </tr>
 
@@ -71,9 +72,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                    <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
                     <LuPencil />
-                      </button>
+                      </button></a>
                     </td>
                   </tr>
 
@@ -95,9 +97,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                    <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
-                     <LuPencil />
-                      </button>
+                    <LuPencil />
+                      </button></a>
                     </td>
                   </tr>
 
@@ -119,9 +122,10 @@ const Dashboard = () => {
                       </span>
                     </td>
                     <td className="px-4 py-3">
+                    <a href="/SupportTicket2">
                       <button className="p-1 border rounded hover:bg-gray-100">
-                        <LuPencil />
-                      </button>
+                    <LuPencil />
+                      </button></a>
                     </td>
                   </tr>
                 </tbody>

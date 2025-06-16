@@ -15,6 +15,8 @@ import Clients from './Clients'
 import Users from './Users'
 import SupportTicket from './SupportTicket'
 import ToInvoice from "./ToInvoice"
+
+import SupportTicket2 from './Suppor
 const router = createBrowserRouter([
   {
     path:"/",
@@ -69,9 +71,13 @@ const router = createBrowserRouter([
      element:<Users/>
       },
       {
-        path:"/supportTicket",
-        element:<SupportTicket/>
-         },
+      path:"/supportTicket",
+      element:<SupportTicket/>
+      },
+      {
+      path:"/supportTicket2",
+      element:<SupportTicket2/>
+      },
     ]
   }
 ])
